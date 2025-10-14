@@ -1,0 +1,218 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: #0f1b40;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.logo span {
+  color: #2ec4b6;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #2ec4b6;
+}
+
+/* HERO SECTION */
+.hero {
+  background: url('../images/car-gps.jpg') center/cover no-repeat;
+  text-align: center;
+  color: white;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1em;
+  margin-bottom: 25px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  background: #2ec4b6;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #1aa39a;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid white;
+}
+
+/* ABOUT */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  color: #0f1b40;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.buy-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #0f1b40;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.buy-btn:hover {
+  background: #2ec4b6;
+}
+
+/* CONTACT FORM */
+.contact {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button[type="submit"] {
+  background: #2ec4b6;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #0f1b40;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* WHATSAPP FLOAT BUTTON */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: white;
+  font-size: 24px;
+  padding: 15px 18px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.8em;
+  }
+}
